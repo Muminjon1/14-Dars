@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./fontawesome-free-5.15.3-web/css/all.css">
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .box1{
+            width: 150px;
+            height: 60px;
+            margin-left: 100px;
+            margin-top: 100px;
+            border-radius: 5px;
+            background-color: blue;
+        }
+
+        .p1{
+            color: #fff;
+            font-family: sans-serif;
+            font-weight: 700;
+            padding-left: 35px;
+            padding-top: 20px;
+        }
+
+        .box1 a{
+            text-decoration: none;
+
+        }
+
+        .box1:hover{
+            background-color: lightseagreen;
+        }
+
+        .box1:active{
+            transform: translateY(5px);
+        }
+
+
+        .box2{
+            width: 200px;
+            height: 200px;
+            background-color: pink;
+            border-radius: 50%;
+            margin-left: 400px;
+            margin-top: -55px;
+            transition: all .2s linear;
+        }
+
+        .box2 .p2{
+            margin-left: 10px;
+            padding-top: 20px;
+            text-decoration: none;
+        }
+
+        .box2 .p2 a{
+        }
+
+        .box2 .fas{
+            margin-left: 100px;
+            margin-top: -100px;
+        }
+
+        .box2:hover{
+            /* transform: scaleX(1.1) scaleY(1.1); */
+            margin-right: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="box1">
+        <a href="#">
+            <p class="p1">Click here</p>
+
+        </a>
+    </div>
+
+    <div class="box2">
+    <a href="#">
+        <p class="p2">Click me</p>
+        <i class="fas fa-arrow-right"></i>
+    </a></div>
+</body>
+</html>

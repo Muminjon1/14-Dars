@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .rotate{
+            margin-top: 30px;
+            margin-left: 30px;
+            /* margin: 0 auto; */
+            background-color: orange;
+            width: 200px;
+            height: 200px;
+        }
+
+        .rotate:hover{
+            transform: rotate( 20deg );
+        }
+
+        .scale{
+            width: 200px;
+            height: 200px;
+            background-color: orange;
+            margin-left: 300px;
+            margin-top: -200px;
+            transition: all;
+            transition-duration: .2s;
+            transition-timing-function: linear;
+            transform-origin: center bottom;
+        }
+
+        .scale:hover{
+            transform: scaleY(1.1) scaleX(0.9);
+            }
+
+        .skew{
+            width: 200px;
+            height: 200px;
+            margin-left: 560px;
+            margin-top: -200px;
+            background-color: orange;           
+        }
+
+        .skew:hover{
+            transform: skew(20deg);
+        }
+
+        .translate{
+            width: 200px;
+            height: 200px;
+            background-color: orange;
+            margin-left: 800px;
+            margin-top: -200px;
+        }
+
+        .translate:hover{
+            transform: scale(1.2);
+            transform-origin: left top;
+            /* width: 250px;
+            height: 250px; */
+        }
+    </style>
+</head>
+<body>
+    <div class="rotate"></div>
+    <div class="scale"></div>
+    <div class="skew"></div>
+    <div class="translate"></div>
+</body>
+</html>
